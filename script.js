@@ -45,8 +45,9 @@ function clickPlay() {
 
 function clickTest() {
   mode = 2;
+  document.getElementById("play").removeEventListener("click", clickPlay);
   document.getElementById("reset").click();
-  document.getElementById("play").removeEventListener("click", clickTest);
+  document.getElementById("display").innerHTML = "00:05";
   myTimer = setInterval(countdown, 1000);
 }
 
@@ -56,13 +57,11 @@ function clickPause() {
 }
 
 function clickReset() {
-  document.getElementById("play").addEventListener("click", clickPlay);
   clearInterval( myTimer );
-  if ( mode == 2) {
-      document.getElementById("display").innerHTML = "00:05";
-  }
-  else {
+  if ( mode != 2) {
+    document.getElementById("play").addEventListener("click", clickPlay);
     document.getElementById("display").innerHTML = "20:00";
+
   }
 
   mode = 0;
