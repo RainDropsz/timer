@@ -17,14 +17,16 @@ function countdown() {
   let ss = parseInt(timestr.slice(3,5));
   let mstr = "", sstr = "";
 
+  if (timestr == "00:01") {
+      mySound.play();
+  }
+
   if (timestr == "00:00") {
     if (mode == 0) {
       mm =  0; ss = 21; mode = 1;
-      mySound.play();
     }
     else {
       mm = 20; ss = 01; mode = 0;
-      mySound.play();
     }
     changeBgColor();
   }
