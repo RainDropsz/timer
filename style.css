@@ -17,7 +17,7 @@ body   { font-family: Arial, Helvetica, sans-serif;
 
 #test { width: 60px; margin: 3vh auto; text-align: center; padding: 3px;
         background-color: #fafafa; border-radius:10px; color: #666666;}
-section { text-align: center; margin: auto; width: 50%; color: #666666;}
+section { text-align: center; margin: auto; width: 50%; max-width: 275px; color: #666666;}
 
 footer {text-align: center; color: #666666; font-size: 15px;
         position: absolute; bottom: 0; padding: 2vh 0; width: 100%;}
