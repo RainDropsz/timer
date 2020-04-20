@@ -1,13 +1,18 @@
 *  { border: 0; margin: 0; }
-body   { font-family: Arial, Helvetica, sans-serif; 
-         background-image: linear-gradient(to bottom right, #ffffff, #add8e6);
+body   { font-family: Arial, Helvetica, sans-serif;
+         background-color: #add8e6;
+         background-image: url("clouds.jpg");
+         background-position: center; 
+         background-size: cover;
          height: 100vh; color: #bbbbbb; border-color: #bbbbbb; 
          position: relative;}
 #clock  { border: solid; padding: 5px;
          border-radius: 10px; margin: 5px auto; width: 350px; height: 150px; }
 
-#display { border: solid; width: 300px; height: 50%;  min-height: 100px; margin: 0 auto; 
-           font-size: 90px; text-align: center; border-radius: 2vh;}
+.display { border: solid; width: 300px; height: 50%;  min-height: 100px; margin: 0 auto; 
+           font-size: 90px; text-align: center; border-radius: 2vh;
+background-color: #fcfcfc90; text-shadow: 0 0 2px #fae277;}
+.rest { background-color: #77fa9a90;}
 
 .btmrow { margin: 7px 0; text-align: center;}
 .btn { display: inline-block; width: 40px; padding: 3px; border-radius: 2vh; 
@@ -17,10 +22,21 @@ body   { font-family: Arial, Helvetica, sans-serif;
 
 #test { width: 60px; margin: 3vh auto; text-align: center; padding: 3px;
         background-color: #fafafa; border-radius:10px; color: #666666;}
-section { text-align: center; margin: auto; width: 50%; max-width: 275px; color: #666666;}
+section { text-align:center; margin: auto; color: #666666; padding: 0 20%;}
+section p {margin: 5vh 0; text-align: left; 
+background-color: #77dafa20; border-radius: 4vw;}
+em { text-shadow: -1px 1px 0px #fae277; }
+#p1 { margin-left: 15% }
+#p2 { margin-left: 20% }
+#p3 { margin-left: 35% }
+#p4 { margin-left: 30% }
+
 
 footer {text-align: center; color: #666666; font-size: 15px;
         position: absolute; bottom: 0; padding: 2vh 0; width: 100%;}
 footer p      { margin: auto; width: 100%; display: inline-block;}
 a             {text-decoration: none; color: inherit;}
 
+@media (max-width: 450px) {
+  section { padding: 0; }
+}

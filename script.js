@@ -12,7 +12,7 @@ let mySound = new sound("beep-01a.mp3");
 
 //Functions
 function countdown() {
-  let timestr = document.getElementById("display").innerText;
+  let timestr = document.getElementsByClassName("display")[0].innerText;
   let mm = parseInt(timestr.slice(0,2));
   let ss = parseInt(timestr.slice(3,5));
   let mstr = "", sstr = "";
@@ -37,7 +37,7 @@ function countdown() {
   mstr = ("00" + mm).slice(-2);
   sstr = ("00" + ss).slice(-2);
 
-  document.getElementById("display").innerHTML = mstr + ":" + sstr;
+  document.getElementsByClassName("display")[0].innerHTML = mstr + ":" + sstr;
 }
 
 function clickPlay() {
@@ -49,7 +49,7 @@ function clickTest() {
   mode = 2;
   document.getElementById("play").removeEventListener("click", clickPlay);
   document.getElementById("reset").click();
-  document.getElementById("display").innerHTML = "00:05";
+  document.getElementsByClassName("display")[0].innerHTML = "00:05";
   myTimer = setInterval(countdown, 1000);
 }
 
@@ -62,7 +62,7 @@ function clickReset() {
   clearInterval( myTimer );
   if ( mode != 2) {
     document.getElementById("play").addEventListener("click", clickPlay);
-    document.getElementById("display").innerHTML = "20:00";
+    document.getElementsByClassName("display")[0].innerHTML = "20:00";
 
   }
 
@@ -72,9 +72,10 @@ function clickReset() {
 
 function changeBgColor() {
   if (mode == 0 || mode == 2) {
-    document.getElementById("display").style.backgroundColor = "transparent";  }
+    document.getElementsByClassName("display")[0].classList. remove("rest"); }
+//style.backgroundColor = "transparent";  }
   else if (mode == 1) {
-    document.getElementById("display").style.backgroundColor = "#ccddee";  }
+    document.getElementsByClassName("display")[0].classList.add("rest");  }
 }
 
 function sound(src) {
