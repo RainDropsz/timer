@@ -1,7 +1,7 @@
 *  { border: 0; margin: 0; }
 body   { font-family: Arial, Helvetica, sans-serif;
          background-color: #add8e6;
-         background-image: url("clouds.jpg");
+         background-image: url("./clouds.JPG");
          background-position: center; 
          background-size: cover;
          height: 100vh; color: #bbbbbb; border-color: #bbbbbb; 
@@ -24,11 +24,12 @@ background-color: #fcfcfc90; text-shadow: 0 0 2px #fae277;}
         background-color: #fafafa; border-radius:10px; color: #666666;}
 section { text-align:center; margin: auto; color: #666666; padding: 0 20%;}
 section p {margin: 5vh 0; text-align: left; 
-background-color: #77dafa20; border-radius: 4vw;}
-em { text-shadow: -1px 1px 0px #fae277; }
+background-color: #77dafa20; border-radius: 4vw; font-size: 16px; }
+em { text-shadow: -1px 1px 0px #fae277; font-weight: bold;}
+section p em {font-size: 18px; }
 #p1 { margin-left: 15% }
 #p2 { margin-left: 20% }
-#p3 { margin-left: 35% }
+#p3 { margin-left: 25% }
 #p4 { margin-left: 30% }
 
 
