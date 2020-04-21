@@ -1,7 +1,7 @@
 *  { border: 0; margin: 0; }
 body   { font-family: Arial, Helvetica, sans-serif;
          background-color: #add8e6;
-         background-image: url("./clouds.JPG");
+         background-image: url("./clouds.jpg");
          background-position: center; 
          background-size: cover;
          height: 100vh; color: #bbbbbb; border-color: #bbbbbb; 
