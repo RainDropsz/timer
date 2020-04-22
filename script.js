@@ -8,7 +8,7 @@
 //Global Variables
 let myTimer;
 let mode = 0;
-let mySound = new sound("beep-01a.mp3");
+let mySound = new sound("./media/beep-01a.mp3");
 
 //Functions
 function countdown() {
