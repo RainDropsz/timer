@@ -28,8 +28,10 @@ em { text-shadow: -1px 1px 0px #fae277; font-weight: bold;}
 section p em {font-size: 18px; }
 
 section { text-align:center; color: #666666;}
-section p {margin: 5vh auto; text-align: center; 
-background-color: #77dafa20; border-radius: 4vw; font-size: 16px; }
+section p {
+      margin: 5vh auto; text-align: center; 
+      background-color: #77dafa20; border-radius: 4vw; font-size: 16px; 
+      -webkit-background-clip: text; }
 #p1 { margin-left: -118px }
 #p2 { margin-left:  -34px }
 #p3 { margin-left:   96px }
